@@ -22,12 +22,12 @@ document
       )
       .then(
         (res) => {
-          console.log(res);
+        //   console.log(res);
           //   alert("Thank you. We will get back to you as soon as possible.");
           AlertModal.style.display = "block";
         },
         (error) => {
-          console.error(error);
+        //   console.error(error);
 
           alert("Ahh, something went wrong. Please try again.");
         }
