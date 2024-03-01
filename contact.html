@@ -244,7 +244,7 @@
             ></iframe>
           </div>
           <div class="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
-            <form>
+            <form id="myForm" onsubmit="event.preventDefault()">
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating">
@@ -260,31 +260,25 @@
                 <div class="col-md-6">
                   <div class="form-floating">
                     <input
+                      required
                       type="email"
                       class="form-control"
                       id="email"
+                      name="email"
                       placeholder="Your Email"
                     />
                     <label for="email">Your Email</label>
                   </div>
                 </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                </div>
+
                 <div class="col-12">
                   <div class="form-floating">
                     <textarea
+                      required
                       class="form-control"
                       placeholder="Leave a message here"
                       id="message"
+                      name="message"
                       style="height: 150px;"
                     ></textarea>
                     <label for="message">Message</label>
@@ -469,8 +463,10 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!--  scripts -->
     <script src="js/main.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   </body>
 </html>

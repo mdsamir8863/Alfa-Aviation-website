@@ -4,11 +4,11 @@ function showModalAfterDelay() {
   setTimeout(function () {
     modal.style.display = "block";
     removeBeforeUnloadListener(); // Remove beforeunload event listener when modal is displayed
-  }, 3000);
+  }, 4000);
 }
 
 // Call the function when the page loads
-// window.addEventListener("load", showModalAfterDelay);
+window.addEventListener("load", showModalAfterDelay);
 
 // Event listener for beforeunload event
 function beforeUnloadHandler(e) {
