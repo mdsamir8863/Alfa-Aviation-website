@@ -3,6 +3,7 @@ document
   .addEventListener("submit", async function (event) {
     event.preventDefault();
 
+    const AlertModal = document.getElementById("AlertModal");
     const username = document.getElementById("email");
     const message = document.getElementById("message");
 
@@ -22,7 +23,8 @@ document
       .then(
         (res) => {
           console.log(res);
-          alert("Thank you. I will get back to you as soon as possible.");
+          //   alert("Thank you. We will get back to you as soon as possible.");
+          AlertModal.style.display = "block";
         },
         (error) => {
           console.error(error);
@@ -31,3 +33,7 @@ document
         }
       );
   });
+
+function closeModal() {
+  AlertModal.style.display = "none";
+}
