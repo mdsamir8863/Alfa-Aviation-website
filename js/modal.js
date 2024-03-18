@@ -8,7 +8,7 @@ function showModalAfterDelay() {
 }
 
 // Call the function when the page loads
-window.addEventListener("load", showModalAfterDelay);
+// window.addEventListener("load", showModalAfterDelay);
 
 // Event listener for beforeunload event
 function beforeUnloadHandler(e) {
