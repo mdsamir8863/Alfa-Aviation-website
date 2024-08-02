@@ -15,7 +15,7 @@ document
           from_name: username.value,
           to_name: "Alfa Aviation academy",
           from_email: username.value,
-          to_email: "alfaaviationacdmy@gmail.com",
+          to_email: "contact@alfaaviationacademy.in",
           message: message.value,
         },
         "3x9HxoLtTI2JRcraF"
